@@ -15,5 +15,6 @@ export default {
 .title-bar{
   height: 50px;
   background: #000;
+  width: 100%;
 }
 </style>
