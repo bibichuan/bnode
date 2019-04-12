@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1555058606963'); /* IE9 */
+  src: url('iconfont.eot?t=1555058606963#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOUAAsAAAAAB6wAAANFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqCRIIpATYCJAMUCwwABCAFhG0HTxu8BsguoRzbUaRENatbBuFxu/Ca0l+4fwax8dC33+ud3dmXzfsBdokClJFY8lVlVwuogGRVa0SPr1CNsRWKjcj/rWl/S7gpkJoSgQpK/pvw7JudAk+BHQsJqEje8xd7rnHXU3FHrgRft9/XAQYSJKcWZY1HHCbNxCVfs5MTqBc+l+k1wdZivXTFPk8SFPP/uZ/PqxDIa882twqrCAraGeB4QAOKLrLf+L8o/w/Y0P2sJzDaUEe6PjFnhCTJ7BaIR163HZIydin5UBeGirEpvmp6+dx8B74E7x//tUQSRavMjW6O4y4YKrlexYpfeJA++jidFvwkKg6BJF5U6h+JjfyHYo3q38U5B0ZdUX7lot3Wq68vNL5pDKP1D49QpUIMkGMGnAskv6odhOCXhlD5nY2Q/L8KKHiusYyYwgPgFaJuum8oqsgFikheVwfyLB/fSYmf9lRdtzB83FYy29ybjG93AaS4jSA/PuWZ158kTaBO/Kd3KaPN302p4X4VadL8G7PlauvuOMdovjy+Ebkm47m4Pcm3mC7wp1dbQ28b6gZ0a+/kMdmxNH2bzuwPnWt7v4D+elXIBUOFskiR5UJi4eCB6Yaq5tbml/X5vQJZCN4ErcPp7z+PlF1l0U8UR8M6kV8//xyxVIX9Nv//hJs+ekuoZb2Idy6rR2oP0GcS9UbMj3/0O75r0lkzj+8k+PlDhfbLUnd5P1dD8Ed4HUtSE5iKlkqhw1WSmx2x3BHv5ef9B/OSyDTy1c7JhG41gWLKOlTdJipxh9BMHMGgO4PRgcnJE8uYWJHT2LcHEBY8QzHnAqoFYVTiPqBZE4XBQsTC6FYszzmxHd6UawztHF3EsUy8ThpSbBVPCVP16J4P2FlaENDMyDSvizQ3NOVDkxhCNsUAbcHdwrlCFEaDZAI2w0CAEpVRHzp5g4dztaexUal6UYOTBiHFNQyy45AL4bCM8HKiQhSvMpdSeHs95DYvwI41FFXZzRCj8dZONGvQ1AE1KQ11KrqVSzQL3FpwnIJQMFQQMQFaFLD8FKFWt/JBTlwDzwCvqkcjlVO6ShuWlwffcRWMzP4tStTIaDHoj70hrxO3gkmP7UthROIL1Dh1c+IfBqiGAAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1555058606963') format('woff'),
+  url('iconfont.ttf?t=1555058606963') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1555058606963#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-minimize:before {
+  content: "\e629";
+}
+
+.icon-maximize:before {
+  content: "\eb97";
+}
+
+.icon-restore:before {
+  content: "\e673";
+}
+
+.icon-close:before {
+  content: "\e713";
+}
+

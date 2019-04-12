@@ -1,3 +1,6 @@
+import 'normalize.css';
+import './style/base.css';
+import './assets/font/iconfont.css';
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
