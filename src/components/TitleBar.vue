@@ -8,6 +8,8 @@
   </div>
 </template>
 <script>
+import { ipcRenderer as ipc } from 'electron';
+
 export default {
   name: 'titlebar',
   data() {
@@ -18,6 +20,7 @@ export default {
   methods: {
     winClose() {
       console.log('dsf');
+      ipc.send('close');
     },
     winMaximize() {
       console.log('dsf1');
