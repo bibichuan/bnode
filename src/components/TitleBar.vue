@@ -19,14 +19,22 @@ export default {
   },
   methods: {
     winClose() {
-      console.log('dsf');
       ipc.send('close');
     },
     winMaximize() {
-      console.log('dsf1');
+      const { $el } = this;
+      const btnMax = $el.querySelector('.btn-max');
+      const { classList } = btnMax;
+      if (!classList.contains('icon-restore')) {
+        classList.add('icon-restore');
+        ipc.send('max', 'max');
+      } else {
+        classList.remove('icon-restore');
+        ipc.send('max', 'restore');
+      }
     },
     winMinimize() {
-      console.log('dsf2');
+      ipc.send('min');
     },
   },
 };
@@ -34,7 +42,7 @@ export default {
 <style lang="scss">
 .title-bar{
   height: 30px;
-  background: #000;
+  background: #a29f9f;
   width: 100%;
   -webkit-user-select: none;
   -webkit-app-region: drag;

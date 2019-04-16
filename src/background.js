@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, protocol, BrowserWindow } from 'electron'
+import { app, protocol, BrowserWindow,ipcMain } from 'electron'
 import {
   createProtocol,
   installVueDevtools
@@ -16,7 +16,7 @@ protocol.registerStandardSchemes(['app'], { secure: true })
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({ width: 800, height: 600,frame: false,titleBarStyle: 'hidden',titleBarStyle: 'customButtonsOnHover',
-  maximizable:false,minimizable:false,transparent:true,hasShadow:false})
+  transparent:true,hasShadow:false})
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
@@ -30,7 +30,21 @@ function createWindow () {
 
   win.on('closed', () => {
     win = null
+  });
+  //关闭按钮
+  ipcMain.on("close",e=>{
+    win.close();
   })
+  ipcMain.on('min', e=> win.minimize());
+  ipcMain.on('max', (e,arg)=> {
+    if (arg == 'restore') {
+      console.log('dds');
+      win.unmaximize();
+    } else {
+      win.maximize();
+    }
+  });
+
 }
 
 // Quit when all windows are closed.
