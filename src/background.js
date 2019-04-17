@@ -38,7 +38,6 @@ function createWindow () {
   ipcMain.on('min', e=> win.minimize());
   ipcMain.on('max', (e,arg)=> {
     if (arg == 'restore') {
-      console.log('dds');
       win.unmaximize();
     } else {
       win.maximize();
